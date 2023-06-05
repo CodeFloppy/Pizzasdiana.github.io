@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="fondo">
+            <div class="colores rojo"></div>
+            <div class="colores blanco"></div>
+            <div class="centro">
+                <div class="concentrico"></div>
+            </div>
+        </div>
+
+        <div class="elementos">
+
+            <div class="bt bt-izq" id="btIzquierdo" onclick="direction(-1)"></div>
+
+            <div class="box-carta">
+                <div class="margen">
+    
+                    <div class="cabecera">
+                        <div>
+                            <p class="nombre" id="nombre">Charizard</p>
+                            <p class="ps" id="bxp">150 bxp</p>
+                        </div>
+                        
+                        <div class="elemento"></div>
+                    </div>
+                    <div class="img-pokemon" id="imgPokemon">
+                        <img src="img/pokemon 001.jpg" alt="">
+                    </div>
+    
+                    <div class="info" id="info">
+                        <div class="datos" id="datos">
+                            <li class="numero">N-005</li>
+                            <li class="tipo">Pokemon fuego</li>
+                            <li class="altura">Altura: 1.7m</li>
+                            <li class="peso">Peso: 90.5kg</li>
+                        </div>
+                        <div class="habilidad">
+                            <p id="nomHabilidad">Habilidad: Quema de energia</p>
+                            <p id="infHabilidad">
+                                Todas las ennergias etregadas a este pokemon son de tipo fuego
+                                en vez de su tipo habitual.
+                            </p>
+                            <hr>
+                            <p id="movimiento">Giro fuego <span class="golpe">200</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bt bt-dr" id="btDerecho" onclick="direction(1)"></div>
+        </div>
+
+    </div>
+    <script src="llamarApi.js"></script>
+</body>
+</html>
